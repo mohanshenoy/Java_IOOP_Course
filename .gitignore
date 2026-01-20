@@ -1,0 +1,20 @@
+# Compiled Java class files
+*.class
+
+# Eclipse metadata and build folders
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+
+# Eclipse project specific settings (optional)
+# Keep .project and .classpath if you want to import easily on other PCs
+# .settings/
+# .project
+# .classpath
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
