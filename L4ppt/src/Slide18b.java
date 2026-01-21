@@ -1,4 +1,4 @@
-public class Example11 {
+public class Slide18b {
 	public static void main(String[] args)  {
 		int i=0;
 		for( ; ; ) {
