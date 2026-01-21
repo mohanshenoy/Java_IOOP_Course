@@ -1,4 +1,4 @@
-public class PalindromeExample {
+public class Slide34_5 {
     public static void main(String[] args) {
         int num = 12321;
         if (isPalindrome(num)) {

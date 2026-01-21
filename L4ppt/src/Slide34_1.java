@@ -1,4 +1,4 @@
-public class SumNaturalNumbers {
+public class Slide34_1 {
     public static void main(String[] args) {
         int n = 10; // The range of natural numbers
         int sum = 0;

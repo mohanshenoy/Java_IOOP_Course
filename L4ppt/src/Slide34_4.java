@@ -1,6 +1,6 @@
-public class PalindromeCheck {
+public class Slide34_4 {
     public static void main(String[] args) {
-        int num = 2325524;
+        int num = 2332;
         int originalNum = num;
         int reversedNum = 0;
         while (num > 0) {
