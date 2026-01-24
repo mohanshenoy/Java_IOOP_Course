@@ -5,7 +5,7 @@ public class Slide38 {
 		boolean t = true;
 		System.out.println("before the return");
 		if (t)
-		    return; // Return to caller
+		    return; // Explicit Return to caller
 		System.out.println("This wont execute");
 
 	}
