@@ -1,32 +1,31 @@
-import java.util.Arrays;
 
+import java.util.Scanner;
+
+
+/**
+ * 2.	Write a java program to add two numbers using the bitwise operator and check 
+ * if the output is an even or odd number. [Hint: use left shift and right shift bitwise 
+ * operators]. 
+ */
 public class Exercise02 {
-	
-    public static void main(String[] args) {
-    	
-        int[] arr = {1, 2, 3, 4, 5};
-        rotate(arr, 2, "right");  
-        System.out.println("Right: " + Arrays.toString(arr));
+
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int x, y,carry;
         
-        int[] arr2 = {1, 2, 3, 4, 5};
-        rotate(arr2, 2, "left");  
-        System.out.println("Left: " + Arrays.toString(arr2));
-    }
+        System.out.print("Enter first number: ");
+        int first= input.nextInt();
+        x = first;
+        
+        System.out.print("Enter second number: ");
+        int second= input.nextInt();
+        y = second;
 
-    public static void rotate(int[] nums, int k, String direction) {
-        int n = nums.length;
-        k %= n;
-        if (!direction.equalsIgnoreCase("right")) k = n - k;
-        reverse(nums, 0, n - 1);
-        reverse(nums, 0, k - 1);
-        reverse(nums, k, n - 1);
-    }
-
-    private static void reverse(int[] nums, int start, int end) {
-        while (start < end) {
-            int temp = nums[start];
-            nums[start++] = nums[end];
-            nums[end--] = temp;
-        }
-    }
+		while(y!=0){
+			carry=x&y;
+			x=x^y;
+			y=carry<<1;
+		}
+		System.out.println(first + " + " + second +" ="+x);
+	}
 }
