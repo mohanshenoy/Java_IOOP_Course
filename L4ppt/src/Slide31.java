@@ -1,6 +1,9 @@
 public class Slide31 {
+
     public static void main(String[] args) {
-    	for(i = 0; i < 10; i++) {
+    	int x=0, y=0;
+    	boolean running = true;
+    	for(int i = 0; i < 10; i++) {
     	    while (running) {
     	        if (x < y)
     	            break;

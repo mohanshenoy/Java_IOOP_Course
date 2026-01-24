@@ -5,7 +5,7 @@ public class Slide30 {
         for (int i = 0; i <= num; i++)
             sum += i;
         System.out.println("sum is :" + sum);
-        int count = i;
-        System.out.println("count is :" + count);
+        //int count = i;
+       //System.out.println("count is :" + count);
     }
 }

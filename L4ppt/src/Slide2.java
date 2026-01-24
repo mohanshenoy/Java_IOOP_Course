@@ -7,10 +7,10 @@ public class Slide2 {
 		
 		{
 			int count =10;
-			count = count+1
+			count = count+1;
 		}
 		{
-			count++;//not in scope
+			//count++;//not in scope
 		}
 		
 		{
