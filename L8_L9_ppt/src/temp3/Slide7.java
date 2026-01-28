@@ -9,8 +9,6 @@ public class Slide7 {
 
 }
 
-
-
 class Test {
     void meth(int i, int j) {
         i *= 2;

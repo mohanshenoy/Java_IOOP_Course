@@ -1,9 +1,3 @@
-
-public class Slide33_2 {
-	public static void main(String[] args) {
-	}
-}
-
 class Swapper {
     int x;
     int y;
@@ -24,14 +18,14 @@ class Swapper {
     }
 }
 
-class SwapperDemo {
+public class SwapperDemo {
     public static void main(String[] args) {
         Swapper s = new Swapper(10, 20);
         System.out.println("Before swap:");
         System.out.println("x: " + s.getX());
         System.out.println("y: " + s.getY());
         s.swap();
-        System.out.println("\nAfter swap:");
+        System.out.println("After swap:");
         System.out.println("x: " + s.getX());
         System.out.println("y: " + s.getY());
     }

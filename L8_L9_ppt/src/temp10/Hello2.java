@@ -1,10 +1,12 @@
+package temp10;
 
-class Hello {
-    Hello() {
+class Hello2 {
+    Hello2() {
         System.out.println("Default constructor");
     }
+
     public static void main(String[] args) {
-        Hello h;
-        Hello h1 = new Hello();
+        Hello2 h;
+        Hello2 h1 = new Hello2();
     }
 }

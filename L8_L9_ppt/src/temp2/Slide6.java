@@ -9,7 +9,6 @@ public class Slide6 {
 
 }
 
-
 //Returning an object
 class Test {
 	 int a;
