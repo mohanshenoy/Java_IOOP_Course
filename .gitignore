@@ -11,8 +11,6 @@ tmp/
 
 
 # Ignore all Eclipse metadata and settings
-**/.project
-**/.classpath
 **/.settings/
 **/.metadata/
 
