@@ -1,18 +1,20 @@
-# Compiled Java class files
-*.class
+# Ignore all compiled class files in any directory
+**/*.class
 
-# Eclipse metadata and build folders
+# Ignore all Eclipse build output folders
+**/bin/
+**/target/
 .metadata/
-bin/
 tmp/
 *.tmp
 *.bak
 
-# Eclipse project specific settings (optional)
-# Keep .project and .classpath if you want to import easily on other PCs
-# .settings/
-# .project
-# .classpath
+
+# Ignore all Eclipse metadata and settings
+**/.project
+**/.classpath
+**/.settings/
+**/.metadata/
 
 # OS generated files
 Thumbs.db
