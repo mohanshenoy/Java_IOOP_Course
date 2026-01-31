@@ -8,7 +8,7 @@ import java.util.Scanner;
  * worked in excess of 40 hours.
  * 
  */
-public class Excercise01 {
+public class Exercise01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
