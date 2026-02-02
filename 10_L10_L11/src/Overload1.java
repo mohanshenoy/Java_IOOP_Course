@@ -17,6 +17,7 @@ public class Overload1 {
         int i = 88;
         ob.test();
         ob.test(10, 20);
+        ob.test(10, 20.0); // why this error ??
         ob.test(i);// this will invoke test(double)
         ob.test(123.2); // this will invoke test(double)
     }
