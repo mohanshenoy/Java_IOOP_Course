@@ -37,7 +37,6 @@ class Employee {
 public class Slide_25 {
     public static void main(String[] args) {
         Employee emp = new Employee(101, "Arun Gupta", 5000); 
-
-        emp.display();
+       emp.display();
     }
 }

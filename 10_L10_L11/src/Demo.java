@@ -1,6 +1,6 @@
 
 class A {
-    int N;
+    static int N;
     public static void increment() {
         N++; // this throws a compile - time error. 
     }
