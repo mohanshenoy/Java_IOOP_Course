@@ -23,9 +23,9 @@ class Product {
 public class InventoryManagement {
     static Product[] products = new Product[3];
     static int productCount = 0;
+    
     public static void main(String[] args) {
-        
-    	addProduct("Laptop", 101, 50);
+        addProduct("Laptop", 101, 50);
         addProduct("Phone", 102, 100);
         addProduct("Tablet", 103, 30);
         

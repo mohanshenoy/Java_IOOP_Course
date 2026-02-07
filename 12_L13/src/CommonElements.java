@@ -4,7 +4,7 @@
  */
 public class CommonElements {
     public static void main(String[] args) {
-        int[] array1 = {1, 2, 3, 4, 5, 5};
+        int[] array1 = {1, 2, 3, 4, 5, 5, 5 };
         int[] array2 = {4, 5, 6, 7, 8};
 
         System.out.print("Common elements: ");
