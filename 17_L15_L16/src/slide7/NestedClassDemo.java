@@ -3,7 +3,7 @@ package slide7;
 class Outer {
     int[] nums;
     Outer(int[] n) {
-        nums = n;
+        this.nums = n;
     }
     void analyze() {
         Inner inOb = new Inner();
@@ -11,6 +11,7 @@ class Outer {
         System.out.println(inOb.max());
         System.out.println(inOb.avg());
     }
+    
     class Inner {
         int min() {
             int m = nums[0];

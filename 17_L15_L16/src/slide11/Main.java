@@ -2,7 +2,7 @@ package slide11;
 
 class Outer {
 	
-    static class StaticNested {
+    static class StaticNested { //change to private, protected and show
         void display() {
             System.out.println("Inside static nested class");
         }

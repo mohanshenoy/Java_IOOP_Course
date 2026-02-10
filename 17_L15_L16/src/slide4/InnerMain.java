@@ -3,11 +3,13 @@ package slide4;
 class OuterClass {
     // Member variable of the outer class
     private String message = "Hello from the Outer Class!";
+    static String message1 = "STatic String";
     // Nested class
     class InnerClass {
         // Method in the nested class
         void displayMessage() {
             System.out.println(message); // Accessing the outer class's member
+            System.out.println(message1);
         }
     }
     // Method in the outer class to use the inner class
@@ -16,6 +18,7 @@ class OuterClass {
         inner.displayMessage();
     }
 }
+
 public class InnerMain {
     public static void main(String[] args) {
         OuterClass outer = new OuterClass(); // Creating an instance of the outer class
