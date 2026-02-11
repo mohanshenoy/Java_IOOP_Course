@@ -16,8 +16,7 @@ class TwoDShape {
 //    }
     
     void showDim() {
-        System.out.println("Width and height are " + 
-        		width + " and " + height);
+        System.out.println("Width and height are " + this.width + " and " + this.height);
     }
     
 }

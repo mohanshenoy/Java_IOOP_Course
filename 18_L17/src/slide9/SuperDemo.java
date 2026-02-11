@@ -5,6 +5,9 @@ class SuperClass {
 	
 	// add default constructor and show 
 	
+	SuperClass(){
+		System.out.println("inside default cont");
+	}
 	SuperClass(int superVar) { // remove this code and show 
 		this.superVar = superVar;
 	}
@@ -29,7 +32,7 @@ public class SuperDemo {
 		
 		System.out.println("");
 		
-		//show SubClass
+//		//show SubClass
 		SubClass2 subClass2 = new SubClass2(1,"hello");
 		subClass2.showVars();
 	}
