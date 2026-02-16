@@ -1,0 +1,106 @@
+Create best Java example to showcase
+1) accessing variable and methods with dot operators
+2) methods to set the variables
+3) default, parameterized constructors, pass primitives, objects to these constructors
+4) showcase this keyword
+5) overloaded methods, pass primitives, objects to these methods
+6) return values primitives and objects from these methods
+5) static variables, static block , non static blocks
+6) nested classes ( static and non static classes)
+
+I have already shown Shape base class , Circle, Square , Triangle.
+
+can we use this ?
+You can update step by step as we proceed
+
+******************************************************
+
+L6 Two programming Paradigms, OOP principles and Definitions of class objects and examples 
+L7 Introduction to classes, objects and methods: Class Fundamentals, Creating Objects, Reference Variables and Assignment, simple Methods 
+
+test1.................................................done
+so far you have seen dot operator to access variables and methods, show Box & BoxDemo .java
+create 2 objects of Box and show 
+b2=b1 and show
+
+test2......................................................done
+calc volume in demo class
+create volume method and move the logic
+use of this keyword inside volume method and show
+
+test3....................................................done
+return volume result from the method and show 
+
+test4.....................................................done
+add a parameterised method called setDimensions , remove (.) operator and show
+create 2 objects of Box and show 
+now make class variable as private and show again
+
+test5..................................................done
+L8 Passing and returning a value from a method, Constructors, Parameterized Constructors, The new operator, Garbage Collection and Finalizers 
+L9 This keyword, and example programs on above topics 
+explicit return 
+return object from method ( show demo of Test , TestRetObect .java)
+demo of CallByValue , CallByRef 
+constructor 
+defualt constructor
+show BoxDemo3 
+parameterised constructor, show Box 
+this keyword
+demo Student & Student Demo class
+garbage collection , finalize method
+
+test6......................................................done
+L10 Pass Objects to Methods, Returning Objects, Parameter passing methods 
+L11 Method Overloading, Overloading Constructors 
+Passing/Returning Objects to Methods
+show Box demo passing to methods or constructor
+overloaded constructor ( Box Demo class)
+overloaded method ( show test class)
+
+test7.....................................................in progress
+L12 Understanding static , static members, static methods and static block,inner block 
+static variable ( student demo , addition demo ) 
+static block
+inner block 
+non static methods ?!
+
+Can i have non static block at class level , what is it used for ?
+ANS: Yes, you absolutely can! It is called an Instance Initializer Block (or simply a "Non-Static Block").
+What is it? It is a block of code inside curly braces { ... } written directly inside the class (not inside a method).
+
+What is it used for?
+Shared Code: It runs for every object you create, regardless of which constructor you use. It is perfect for code that must happen for every instance (like assigning a unique ID or incrementing a counter) so you don't have to copy-paste it into every single constructor.
++1
+
+Execution Order
+Parent Constructor (if any)
+Instance Block (Non-static block) //This runs BEFORE the constructor body, for every new object.
+Child Constructor
+
+test8....................................................done
+L13 Example Programs on Arrays and Strings , Arr.ay of objects 
+Introducing Access Control
+Example Programs on Arrays 
+Example Programs on Strings ----string equals, palindrome, vowels, count 
+Example Programs on Array of objects --student arrays, inventory ( product) , course registration
+ 
+test9.......................................................done
+L14 Example Programs on classes and Objects and MCQ’s 
+Student demo 
+Car demo 
+Reading input from user/keyboard, Demo scanner class 
+
+test10.......................................................pending
+L15 Nesting of classes, inner and static inner classes 
+L16 Example programs on the above topics 
+
+
+test11.......................................................pending
+L17 INHERITANCE :Inheritance Basics, types of inheritance etc 
+pending
+
+
+
+
+******************************************************

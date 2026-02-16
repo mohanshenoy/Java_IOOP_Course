@@ -1,4 +1,4 @@
-package animals;
+package shapes;
 
 public class Shape {
 	void rotate(){
