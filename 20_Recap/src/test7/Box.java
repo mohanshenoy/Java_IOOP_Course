@@ -9,19 +9,7 @@ class Box {
 	//recap non static block
 	//recap inner block
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	// STATIC VARIABLE: Shared by all Box objects
 	static int boxCount = 0;
 	

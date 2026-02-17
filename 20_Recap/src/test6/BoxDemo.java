@@ -16,9 +16,10 @@ public class BoxDemo {
 		
 		
 		
+		String s1 = "Mohan";
+		String s2 = new String("MohaN");
 		
-		
-		
+		System.out.println(s1.equals(s2));
 		
 		
 		

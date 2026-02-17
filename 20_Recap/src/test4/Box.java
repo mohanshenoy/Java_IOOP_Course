@@ -1,9 +1,9 @@
 package test4;
 
 class Box {
-	double width; 
-	double height;  
-	double depth;  
+	private double width; 
+	private double height;  
+	private double depth;  
 	
 	double volume() {
 		return (this.width*this.height*this.depth);

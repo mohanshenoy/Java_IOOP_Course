@@ -15,21 +15,7 @@ class Box {
 	//recap explicit return
 	//recap finalize, show slide
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	Box(double val){
 		this.width = val;
 		this.height = val;
@@ -40,8 +26,6 @@ class Box {
 		this.height = height;
 		this.depth = depth;		
 	}
-
-	
 	Box createNewBox(double val){
 		Box box = new Box(val);
 		return box;

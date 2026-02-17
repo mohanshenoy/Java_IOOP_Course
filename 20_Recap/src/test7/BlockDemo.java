@@ -15,23 +15,8 @@ class Student {
     
     //add one or more non static block
     //explain the slide added
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
+     
     //  This runs BEFORE the constructor for every new object.
     {
         System.out.println("Instance Block: Generating unique ID...");

@@ -8,11 +8,6 @@ public class StudentDemo {
     	
     	//recap Scanner
     	
-    	
-    	
-    	
-
-    	
         Scanner sc = new Scanner(System.in);
         Student student = new Student();
 
