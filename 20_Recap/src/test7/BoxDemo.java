@@ -7,7 +7,7 @@ public class BoxDemo {
 		System.out.println("Initial Box Count: " + Box.boxCount);
 		
 		Box box1 = null;
-        // 1. Using Static Validation before creation
+        //Using Static Validation before creation
         if (Box.validate(10, 20, 30)) {
             box1 = new Box(10, 20, 30);
             System.out.println("box1 volume is "+ box1.volume());

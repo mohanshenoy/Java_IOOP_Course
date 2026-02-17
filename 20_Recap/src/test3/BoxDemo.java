@@ -7,6 +7,22 @@ public class BoxDemo {
 		box1.width=10;
 		box1.height=10;
 		box1.depth=10;
+		//invoke volume method
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		System.out.println("volume is "+ box1.volume());
 		
 		Box box2 = new Box();

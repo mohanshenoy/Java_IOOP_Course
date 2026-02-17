@@ -48,6 +48,16 @@ class Box {
 		System.out.println("inside finalize");
 	}
 
+	//add equals method
+	//recap == , .equals
+	
+	
+	
+	
+	
+	
+	
+	
 	public boolean equals(Box b) {
 		if(this.width ==b.width && this.height ==b.height && this.depth ==b.depth) return true;
 		else return false;

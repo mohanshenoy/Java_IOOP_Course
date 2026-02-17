@@ -4,23 +4,41 @@ class Box {
 	private double width;
 	private double height;
 	private double depth;
+	
+	//recap static variables, static block, static method
+	//recap non static block
+	//recap inner block
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// STATIC VARIABLE: Shared by all Box objects
 	static int boxCount = 0;
 	
-	// 1. STATIC VARIABLE: Shared by all Box objects
 	static {
-        System.out.println("--- Box Manufacturing Module Loaded ---");
+		System.out.println("first Static Block...");
         boxCount = 0; // Initialize counter
     }
-	
-    // 2. STATIC BLOCK: Runs once when class is loaded
-    // Realistic Use: Loading configuration or drivers
     static {
-        System.out.println("2. Second Static Block: Verifying configuration...");
-        boxCount += 5; // Add 5 more
+        System.out.println("Second Static Block...");
+        boxCount += 1; // Add 5 more
     }
-	
-    // 3. STATIC METHOD: Called without creating an object
-    // Realistic Use: Utility/Validation logic
+    static {
+        System.out.println("Third Static Block...");
+        boxCount += 1; // Add 5 more
+    }	
+    
+    // STATIC METHOD: Called without creating an object
     static boolean validate(double width, double height, double depth) {
         if (width <= 0 || height <= 0 || depth <= 0) {
             System.out.println("Error: Dimensions must be positive.");
@@ -53,6 +71,7 @@ class Box {
 
 	Box createNewBox(double val){
 		Box box = new Box(val);
+		boxCount++;
 		return box;
 	}
 	

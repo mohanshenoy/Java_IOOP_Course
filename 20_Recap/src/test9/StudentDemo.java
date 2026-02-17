@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 public class StudentDemo {
     public static void main(String[] args) {
+    	
+    	
+    	//recap Scanner
+    	
+    	
+    	
+    	
+
+    	
         Scanner sc = new Scanner(System.in);
         Student student = new Student();
 

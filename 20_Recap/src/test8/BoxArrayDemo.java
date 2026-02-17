@@ -3,6 +3,10 @@ package test8;
 public class BoxArrayDemo {
     public static void main(String[] args) {
         
+    	
+    	//recap Example Programs on Arrays and Strings , Array of objects 
+    	
+    	
         //ARRAY OF OBJECTS DECLARATION ---
         Box[] warehouse = new Box[4];
 
