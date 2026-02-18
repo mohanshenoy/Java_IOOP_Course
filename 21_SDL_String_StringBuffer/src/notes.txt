@@ -1,0 +1,148 @@
+Java implements strings as objects of type String.  
+It has methods to compare two strings, search for a substring, concatenate two strings, and change the case of letters within a string. 
+Also, String objects can be constructed in number of ways, making it easy to obtain a string when 
+needed. 
+
+Once a String object has been created, the character sequence that make up the string cannot be replaced, deleted or extended. Hence, String objects are immutable. 
+For those cases in which a modifiable string is desired, there is a companion class to String called StringBuffer, whose objects contain strings that can be modified after they are created. 
+
+Both the String and StringBuffer classes are defined in java.lang. 
+Thus, they are available to all programs automatically.   
+
+String Construcrtors
+String(char chars[])   
+String(char chars[ ], int startIndex, int numChars)  
+String(String strObj)  
+String(byte asciiChars[ ])  
+String(byte asciiChars[ ], int startIndex, int numChars) 
+
+String methods
+charAt(int index) //Returns the char value at the specified index.
+codePointAt(int index) //Returns the character (Unicode code point) at the specified index.
+compareTo(String anotherString) //Compares two strings lexicographically.
+	If the result is 0, the strings are equal.
+	If the result is negative, the invoking string comes before anotherString alphabetically.
+	If the result is positive, the invoking string comes after anotherString alphabetically.
+compareToIgnoreCase(String str) // Compares two strings lexicographically, ignoring case differences.
+concat(String str) // Concatenates the specified string to the end of this string
+contains(CharSequence s) //Returns true if and only if this string contains the specified sequence of char values.
+endsWith(String suffix) //Tests if this string ends with the specified suffix.
+equals(Object anObject) //Compares this string to the specified object.
+equalsIgnoreCase(String anotherString) //Compares this String to another String, ignoring case considerations.
+format(Locale l, String format, Object... args) //Returns a formatted string using the specified locale, format string, and arguments.
+getBytes() // Encodes this String into a sequence of bytes using the platform's default charset, storing the result into a new byte array.
+getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) //Copies characters from this string into the destination character array.
+indexOf(int ch) // Returns the index within this string of the first occurrence of the specified character.
+isEmpty() //Returns true if, and only if, length() is 0.
+lastIndexOf(int ch) // Returns the index within this string of the last occurrence of the specified character.
+
+
+When you create a String object, you are creating a string that cannot be changed. 
+Once a String object has been created, you cannot change the characters that comprise that string. 
+You can still perform all types of string operations.
+Each time you need an altered version of an existing string, a new String object is created that contains the modifications. 
+The original string is left unchanged. 
+When  a modifiable string is desired, Java provides two options: StringBuffer and StringBuilder. 
+Both hold strings that can be modified after they are created.
+String, StringBuffer, and StringBuilder classes are defined in java.lang.
+All are declared final, which means that none of these classes may be subclassed.
+All three implement the CharSequence interface.
+
+String Length
+The length of a string is the number of characters that it contains. 
+To obtain this value, call the length( ) method.
+public class StringLengthDemo {
+	public static void main(String[] args) {
+		char[] chars = { 'a', 'b', 'c' };
+		String s = new String(chars);
+		System.out.println(s.length());
+		s = new String("MIT Manipal");
+		System.out.println(s.length());
+	}
+}
+
+equals( ) Versus ==
+equals( ) method compares the characters inside a String object. 
+The == operator compares two object references to see whether they refer to the same instance. 
+class EqualsNotEqualTo {
+	public static void main(String[] args) {
+		String s1 = "Hello";
+		String s2 = new String(s1);
+		System.out.println(s1 + " equals " + s2 + " -> " +s1.equals(s2));
+		System.out.println(s1 + " == " + s2 + " -> " + (s1 == s2));
+	}
+}
+
+StringBuffer
+StringBuffer supports a modifiable string. 
+StringBuffer represents growable and writable character sequences. 
+StringBuffer may have characters and substrings inserted in the middle or appended to the end. 
+StringBuffer will automatically grow to make room for such additions and often has more characters preallocated than are actually needed, to allow room for growth.
+
+StringBuffer Constructors
+StringBuffer( )
+StringBuffer(int size)
+StringBuffer(String str)
+StringBuffer(CharSequence chars)
+
+StringBuffer Methods:
+
+length( ) and capacity( )
+The current length of a StringBuffer can be found via the length( ) method. 
+Total allocated capacity can be found through the capacity( ) method. 
+They have the following general forms:
+int length( )
+int capacity( )
+
+append( )
+Concatenates the string representation of any other type of data to the end of the invoking StringBuffer object. 
+It has several overloaded versions. Here are a few of its forms:
+StringBuffer append(String str)
+StringBuffer append(int num)
+StringBuffer append(Object obj)
+
+First, the string representation of each parameter is obtained. 
+Then, the result is appended to the current StringBuffer object. 
+The buffer itself is returned by each version of append( ).
+This allows subsequent calls to be chained together, as shown in the following example:
+
+class AppendDemo {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer(40);
+		int a = 42;
+		String s = sb.append("a = ").append(a).append("!").toString();
+		System.out.println(s);
+	}
+}
+
+insert( )
+Inserts one string into another. 
+It is overloaded to accept values of all the primitive types, plus Strings, Objects, and CharSequences. 
+Like append( ), it obtains the string representation of the value it is called with. 
+This string is then inserted into the invoking StringBuffer object. These are a few of its forms:
+StringBuffer insert(int index, String str)
+StringBuffer insert(int index, char ch)
+StringBuffer insert(int index, Object obj)
+class InsertDemo {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer("I Java!");
+		sb.insert(2, "like ");
+		System.out.println(sb);
+	}
+}
+
+Few more methods, you can refer to the Textbook
+reverse( )
+delete( ) and deleteCharAt( )
+replace( )
+substring( )
+
+
+StringBuilder
+StringBuilder is similar to StringBuffer except for one important difference: it is not synchronized, which means that it is not thread-safe. 
+The advantage of StringBuilder is faster performance. 
+However, in cases in which a mutable string will be accessed by multiple threads, and no external synchronization is employed, you must use StringBuffer rather than StringBuilder.
+
+Refer to Schildt H., Java-The Complete Reference, 12th Edition,Tata McGraw-Hill 2020.  
+Chapter 7 : A Closer look at Methods and Classes ( Section "Exploring the String Class" )
+Chapter 18 String Handling
