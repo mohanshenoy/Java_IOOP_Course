@@ -1,4 +1,5 @@
 package slide19;
+
 // Extend Triangle.
 class ColorTriangle extends Triangle {
     private String color;
