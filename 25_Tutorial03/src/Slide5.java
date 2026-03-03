@@ -1,0 +1,11 @@
+
+public class Slide5 {
+
+	public static void main(String[] args) {
+		String   s = "computer";
+	    int a = s.length();  
+	    System.out.println(a);
+
+	}
+
+}
