@@ -1,5 +1,5 @@
 
-public class Slide9 {
+public class Slide09 {
 
 	public static void main(String[] args) {
 		String   s1 = "mangalore";

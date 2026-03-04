@@ -2,9 +2,14 @@
 public class Slide21 {
 
 	public static void main(String[] args) {
-		String s = "mitmanipal";
-    	System.out.println(s.substring(3));
-    	System.out.println(s.substring(3,6));
+		String s1="MIT";
+    	String s2="Manipal";
+    	System.out.println(s1.concat(s2));
+
+    	String s3 = s1.concat(s2);
+
+    	System.out.println(s1);
+    	System.out.println(s3);
+
 	}
-	//index starts at 0( m is at 0)
 }

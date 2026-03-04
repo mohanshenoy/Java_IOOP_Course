@@ -2,9 +2,8 @@
 public class Slide55 {
     public static void main(String[] args) {
     	String input = "aeioxxxxaaaauxxxxx";
-        boolean[] found = new boolean[5]; // [a, e, i, o, u]
-        int uniqueCount = 0;
-        int result = -1;
+        boolean[] found = new boolean[5]; // 0:a, 1:e, 2:i, 3:o, 4:u
+        int count = 0;
 
         for (int i = 0; i < input.length(); i++) {
             char c = Character.toLowerCase(input.charAt(i));
@@ -12,21 +11,15 @@ public class Slide55 {
 
             if (index != -1 && !found[index]) {
                 found[index] = true;
-                uniqueCount++;
+                count++;
             }
 
-            if (uniqueCount == 5) {
-                result = i + 1;
-                break;
+            if (count == 5) {
+                System.out.println("characters compared " + (i + 1));
+                System.exit(0); //return;
             }
         }
-
-        if (result != -1) {
-            System.out.println("characters compared " + result);
-        } else {
-            System.out.println("Not all vowels are present.");
-        }
-
+        System.out.println("Not all vowels are present.");
     }
 }
 //Write a java code snippet to check whether all vowels are 
