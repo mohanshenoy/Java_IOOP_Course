@@ -72,7 +72,7 @@ class LPGCarrier {
     }
 }
 
-public class LogisticsSystem {
+public class LPGManagementSystem {
     public static void main(String[] args) {
     	
         Scanner sc = new Scanner(System.in);
