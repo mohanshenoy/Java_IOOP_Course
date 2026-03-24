@@ -5,14 +5,15 @@ interface SharedConstants { //can be default or public only. CANNOT be private ,
     int LATER = 3;
 }
 
-class MyClass1 implements SharedConstants {
+class Class1 implements SharedConstants {
     int x;
-    MyClass1() {
+    Class1() {
         x = 1;
     }
     int fun() {
-        if (x > 1) {
-        	NO=1;
-        }
-
+        if (x > 1)
+            return NO;
+        else
+            return YES;
+    }
 }
