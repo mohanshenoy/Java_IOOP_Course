@@ -1,13 +1,13 @@
-interface SharedConstants {
-    int NO = 0;//only public, static & final are permitted
-    int YES = 1;
-    int MAYBE = 2;
+interface SharedConstants { //can be default or public only. CANNOT be private , protected
+	int NO = 0;//only public, static & final are permitted
+	int YES = 1;
+	int MAYBE = 2;
     int LATER = 3;
 }
 
-class A implements SharedConstants {
+class MyClass1 implements SharedConstants {
     int x;
-    A() {
+    MyClass1() {
         x = 1;
     }
     int fun() {
