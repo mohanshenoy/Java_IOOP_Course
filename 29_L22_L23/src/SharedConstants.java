@@ -7,11 +7,9 @@ interface SharedConstants {
 
 class A implements SharedConstants {
     int x;
-
     A() {
         x = 1;
     }
-
     int fun() {
         if (x > 1)
             return NO;
