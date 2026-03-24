@@ -11,9 +11,8 @@ class MyClass1 implements SharedConstants {
         x = 1;
     }
     int fun() {
-        if (x > 1)
-            return NO;
-        else
-            return YES;
-    }
+        if (x > 1) {
+        	NO=1;
+        }
+
 }
