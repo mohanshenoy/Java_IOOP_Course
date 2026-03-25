@@ -20,7 +20,7 @@ public class Q1 {
             System.out.println("2) Write the string in an alphabetical order");
             System.out.println("3) Reverse the string");
             System.out.println("4) Concatenate the original string and the reversed string");
-            System.out.println("5) Exit"
+            System.out.println("5) Exit");
             System.out.println(" >>>>>> String Operations Menu <<<<<<< ");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
