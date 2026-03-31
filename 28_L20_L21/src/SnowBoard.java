@@ -12,7 +12,7 @@ public class SnowBoard implements Cloneable{
 	void getAir() {System.out.println("inside getAir method....");}
 	void loseControl() {System.out.println("inside loseControl method....");}
 	
-	@Override
+	@Override	
 	public boolean equals(Object obj) {
 	    if (this == obj) return true;
 	    if (obj == null || getClass() != obj.getClass()) return false;
